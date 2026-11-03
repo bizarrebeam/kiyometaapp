@@ -66,7 +66,7 @@ export default function ManagementPage({ onNavigate, lang, setLang }: Props) {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState<UserRole>("operator");
   const [resetTarget, setResetTarget] = useState<ManagedUser | null>(null);
-  const [resetPassword, setResetPassword] = useState("[removed]");
+  const [resetPassword, setResetPassword] = useState("");
   const [search, setSearch] = useState("");
   const text = (english: string, japanese: string) => lang === "ja" ? japanese : english;
   const langRef = useRef(lang);
@@ -143,7 +143,7 @@ export default function ManagementPage({ onNavigate, lang, setLang }: Props) {
       }
       await resetManagedUserPassword(resetTarget.id, resetPassword);
       setResetTarget(null);
-      setResetPassword("[removed]");
+      setResetPassword("");
     }, text(`Password for ${resetTarget.username} was updated.`, `ユーザー「${resetTarget.username}」のパスワードを更新しました。`));
   };
 

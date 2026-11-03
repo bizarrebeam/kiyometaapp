@@ -26,11 +26,7 @@ select
   lower(coalesce(nullif(u.raw_user_meta_data->>'username', ''), split_part(u.email, '@', 1))),
   u.email,
   coalesce(nullif(u.raw_user_meta_data->>'display_name', ''), split_part(u.email, '@', 1)),
-  case
-    when u.email = 'account@example.invalid' then 'administrator'
-    when u.raw_user_meta_data->>'role' = 'administrator' then 'administrator'
-    else 'operator'
-  end
+  'operator'
 from auth.users u
 where u.email is not null
 on conflict (id) do update set
@@ -51,7 +47,7 @@ begin
     lower(coalesce(nullif(new.raw_user_meta_data->>'username', ''), split_part(new.email, '@', 1))),
     new.email,
     coalesce(nullif(new.raw_user_meta_data->>'display_name', ''), split_part(new.email, '@', 1)),
-    case when new.raw_user_meta_data->>'role' = 'administrator' then 'administrator' else 'operator' end,
+    'operator',
     nullif(new.raw_user_meta_data->>'created_by', '')::uuid
   )
   on conflict (id) do nothing;

@@ -97,11 +97,7 @@ export function useSession() {
       const fallbackUsername =
         String(nextSession.user.user_metadata?.username ?? "").trim() ||
         (nextSession.user.email?.split("@")[0] ?? "operator");
-      const fallbackRole: UserRole =
-        nextSession.user.email === "account@example.invalid" ||
-        nextSession.user.user_metadata?.role === "administrator"
-          ? "administrator"
-          : "operator";
+      const fallbackRole: UserRole = "operator";
 
       type ProfileRow = {
         id: string; username: string; display_name: string; role: string; active: boolean;

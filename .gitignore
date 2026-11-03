@@ -38,6 +38,9 @@ migrate_working_dir/
 /webapp/dist/
 /webapp/.env.local
 /webapp/.env.*.local
+/webapp/.env
+/webapp/.env.*
+!/webapp/.env.local.example
 
 # Supabase CLI local link/cache (backend source itself is committed)
 /backend/supabase/.temp/

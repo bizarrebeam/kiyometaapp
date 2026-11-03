@@ -2607,7 +2607,7 @@ function InvoicePage({ orders, clients, orderIds, lang, setLang, onNavigate }: {
             <div className="invoice-sender w-full min-w-0 relative sm:w-[45%] sm:shrink-0">
               <div className="border border-slate-300 rounded-sm px-4 py-3 text-right">
                 <p className="text-base font-700 text-[#1a3458] break-words leading-snug">{t("sendersCompany", lang)}</p>
-                <p className="text-xs text-slate-600 mt-1 break-all leading-relaxed">support@example.invalid</p>
+                
               </div>
               <div className="mt-3 space-y-2">
                 <div>
