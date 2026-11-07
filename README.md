@@ -12,23 +12,23 @@ The app supports offline order recovery through IndexedDB. It saves drafts, resu
 
 ### Home
 
-<img width="1249" height="1418" alt="screencapture-localhost-5173-2026-11-07-15_06_39" src="https://github.com/user-attachments/assets/066cffd5-1043-4fd8-b0d3-2f788255219e" />
+![Home screen](docs/screenshots/dashboard.png)
 
 ### Order Entry
 
-<img width="1249" height="1699" alt="screencapture-localhost-5173-2026-11-07-15_08_05" src="https://github.com/user-attachments/assets/a3880919-17a6-4e2d-9d2f-c0e9d07f0c97" />
+![Order entry screen](docs/screenshots/order-entry.png)
 
 ### Search & Billing
 
-<img width="1526" height="988" alt="screencapture-localhost-5173-2026-11-07-15_09_11" src="https://github.com/user-attachments/assets/19120720-e903-41f5-95dc-b028af797a34" />
+![Search and billing screen](docs/screenshots/search-billing.png)
 
 ### Production Stage Progress
 
-<img width="1526" height="2369" alt="screencapture-localhost-5173-2026-11-07-15_10_44" src="https://github.com/user-attachments/assets/b40e7be2-2fd5-4c17-a324-264f0207d91a" />
+![Production stage progress screen](docs/screenshots/production-progress.png)
 
 ### Inventory & Purchasing
 
-<img width="1526" height="910" alt="screencapture-localhost-5173-2026-11-07-15_11_48 (1)" src="https://github.com/user-attachments/assets/f9c99091-464d-41d3-af11-624dc88507fd" />
+![Inventory and purchasing screen](docs/screenshots/inventory-purchasing.png)
 
 
 ## Technology
